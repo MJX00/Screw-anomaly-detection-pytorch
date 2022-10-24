@@ -29,7 +29,7 @@ class ImageLoader(Dataset):
         if self.transform:
             image = self.transform(image)
         return image, label
-
+# it's a mlp and should you change it to conv autoencoder at your need 
 class Autoencoder(nn.Module):
     def __init__(self):
         super(Autoencoder, self).__init__()
